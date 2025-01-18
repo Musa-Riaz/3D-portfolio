@@ -75,7 +75,7 @@ export const textVariant = (delay: number) => {
     };
   };
   
-  export const staggerContainer = (staggerChildren, delayChildren) => {
+  export const staggerContainer = (staggerChildren, delayChildren)  => {
     return {
       hidden: {},
       show: {
