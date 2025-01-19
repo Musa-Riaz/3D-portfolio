@@ -14,15 +14,16 @@ import {
     mongodb,
     git,
     figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
+    py,
+    dep,
+    bdai,
+    nust,
+    proj1,
+    proj2,
+    proj3,
+    proj4,
+    proj5,
+    
   } from "../assets";
   
   export const navLinks = [
@@ -42,21 +43,18 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Full Stack Developer",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Frontend Developer",
       icon: mobile,
     },
     {
       title: "Backend Developer",
       icon: backend,
     },
-    {
-      title: "Content Creator",
-      icon: creator,
-    },
+   
   ];
   
   const technologies = [
@@ -97,10 +95,6 @@ import {
       icon: mongodb,
     },
     {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
       name: "git",
       icon: git,
     },
@@ -109,70 +103,52 @@ import {
       icon: figma,
     },
     {
-      name: "docker",
-      icon: docker,
-    },
+      name:"Python",
+      icon: py
+    }
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "Research Intern",
+      company_name: "National Univeristy of Sciences and Technology (NUST)",
+      icon: nust,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "June 2024 - August 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
+        "Developed reports and presentations on the impacts of Artificial Intelligence on elections worldwide.",
+        "Used Label Img to prepare and annotate various datasets.",
+        "Used Google Collab to train YOLOv8 machine learning models with an accuracy of 91.3%.",
+      ],
+    },
+    {
+      title: "Full Stack Intern",
+      company_name: "Digital Empowerment Pakistan (DEP)",
+      icon: dep,
+      iconBg: "#fff",
+      date: "July 2024 - August 2024",
+      points: [
+       "Developed different projects for clients using React JS to create an immersive UI for the users, Node JS and express for the backend and MongoDB for database queries.",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
+      title: "Frontend Developer Intern",
+      company_name: "Bluediamond.AI",
+      icon: bdai,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      date: "August 2024 - September 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Used Figma to develop various Wireframes and mockups for the Pak-Austria Talent-bridge’s website..",
+        "Developed various components and pages using React JS and Tailwind CSS.",
       ],
-    },
+    }
   ];
   
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+        "I thought it was impossible to make a website as beautiful as our product, but Musa proved me wrong.",
       name: "Sara Lee",
       designation: "CFO",
       company: "Acme Co",
@@ -180,7 +156,7 @@ import {
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
+        "I've never met a web developer who truly cares about their clients' success like Musa does.",
       name: "Chris Brown",
       designation: "COO",
       company: "DEF Corp",
@@ -188,7 +164,7 @@ import {
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+        "After Musa optimized our website, our traffic increased by 50%. We can't thank them enough!",
       name: "Lisa Wang",
       designation: "CTO",
       company: "456 Enterprises",
@@ -198,16 +174,16 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Delusion",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "The Delusion Search Engine is a lightweight and efficient application designed for fast and user-friendly search experiences.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "python",
           color: "green-text-gradient",
         },
         {
@@ -215,13 +191,13 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: proj1,
+      source_code_link: "https://github.com/Musa-Riaz/Delusion",
     },
     {
-      name: "Job IT",
+      name: "EduFlow",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "EduFlow is a classroom management system which aims to provide instructors with accessibility to an independent platform to easily manage their classes.",
       tags: [
         {
           name: "react",
@@ -232,33 +208,75 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "tailwind",
           color: "pink-text-gradient",
         },
+        {
+          name: "shadcn",
+          color: "purple-text-gradient",
+        }
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: proj2,
+      source_code_link: "https://github.com/Darker98/EduFlow",
     },
     {
-      name: "Trip Guide",
+      name: "MernMart",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "MernMart is a dynamic e-commerce platform built using the MERN stack that allows users to browse and purchase a wide range of products, offering a seamless shopping experience with features like user authentication, real-time cart updates, and secure payment processing. ",
       tags: [
         {
-          name: "nextjs",
+          name: "reactjs",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "mongodb",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "tailwindcss",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: proj3,
+      source_code_link: "https://github.com/Musa-Riaz/MernMart",
+    },
+    {
+      name: "UrbanNest",
+      description:
+        "UrbanNest is a real estate marketing web application that connects property buyers and sellers. Built with the MERN stack, the platform features property listings with advanced filtering options, helping users find the perfect home or investment property.",
+      tags: [
+        {
+          name: "reactjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "mongodb",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwindcss",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: proj4,
+      source_code_link: "https://github.com/Musa-Riaz/UrbanNest",
+    },
+    {
+      name: "GoldsGym",
+      description:
+        "Golds Gym is a feature-rich fitness web application built with React, designed to help users discover and perform over 1000 exercises.",
+      tags: [
+        {
+          name: "reactjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "materialui",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: proj5,
+      source_code_link: "https://github.com/Musa-Riaz/Golds_gym",
     },
   ];
   

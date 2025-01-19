@@ -20,14 +20,21 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import py from "./tech/py.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
-
-import carrent from "./carrent.png";
+import nust from "./company/nust.png";
+import dep from "./company/dep.png";
+import bdai from "./company/bdai.png";
 import jobit from "./jobit.png";
+import proj1 from "./proj1.png";
+import proj2 from "./proj2.png";
+import proj3 from "./proj3.png";
+import proj4 from "./proj4.png";
+import proj5 from "./proj5.png";
 import tripguide from "./tripguide.png";
 
 export {
@@ -43,6 +50,7 @@ export {
   docker,
   figma,
   git,
+  py,
   html,
   javascript,
   mongodb,
@@ -55,8 +63,15 @@ export {
   meta,
   shopify,
   starbucks,
+  nust,
+  dep,
+  bdai,
   tesla,
-  carrent,
+  proj1,
+  proj2,
+  proj3,
+  proj4,
+  proj5,
   jobit,
   tripguide,
 };
