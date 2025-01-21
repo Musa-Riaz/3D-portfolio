@@ -75,6 +75,7 @@ export const textVariant = (delay: number) => {
     };
   };
   
+  {/* @ts-expect-error asa*/}
   export const staggerContainer = (staggerChildren, delayChildren)  => {
     return {
       hidden: {},

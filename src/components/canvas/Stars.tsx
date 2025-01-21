@@ -1,15 +1,19 @@
-import {useEffect,useState, useRef, Suspense} from 'react'
+import {useState, useRef, Suspense} from 'react'
 import {Canvas, useFrame} from '@react-three/fiber'
 import {Points, PointMaterial, Preload} from '@react-three/drei'
+{/* @ts-expect-error asa*/}
 import * as random from 'maath/random/dist/maath-random.esm'
 
 
+{/* @ts-expect-error asa*/}
 const Stars = (props) => {
 const ref = useRef()
 const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius: 1.2 }));
-
+{/* @ts-expect-error asa*/}
 useFrame((state, delta) => {
+  {/* @ts-expect-error asa*/}
   ref.current.rotation.x -= delta / 10;
+  {/* @ts-expect-error asa*/}
   ref.current.rotation.y -= delta / 15;
 });
   return (

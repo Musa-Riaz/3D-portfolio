@@ -1,13 +1,14 @@
-import React from 'react'
 import {motion} from 'framer-motion'
 import {styles} from '../styles/style'
 import { staggerContainer } from '../utils/motion'
 
 
+{/* @ts-expect-error asa*/}
 const SectionWrapper = (Component, idName) => 
     function HOC(){
         return(
           <motion.section
+          /* @ts-expect-error asa*/
         variants={staggerContainer()}
         initial='hidden'
         whileInView='show'

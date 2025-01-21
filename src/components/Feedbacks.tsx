@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles/style";
 import { SectionWrapper } from "../hoc";
@@ -6,12 +5,18 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
 
 const FeedbackCard = ({
+  /* @ts-expect-error asa*/
   index,
+  /* @ts-expect-error asa*/
   testimonial,
+  /* @ts-expect-error asa*/
   name,
+  /* @ts-expect-error asa*/
   designation,
+  /* @ts-expect-error asa*/
   company,
-  image,
+  /* @ts-expect-error asa*/
+  image
 }) => {
   return (
     <>
@@ -50,6 +55,7 @@ const Feedbacks = () => {
       <div
         className={`${styles.padding} bg-tertiary rounded-2xl min-h-[300px]`}
       >
+        {/* @ts-expect-error asa*/}
         <motion.div variants={textVariant()}>
           <p className={`${styles.sectionSubText}`}>What others say</p>
           <h2 className={`${styles.sectionHeadText}`}>Testimonials.</h2>

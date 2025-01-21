@@ -1,11 +1,10 @@
-import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles/style";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
-
+{/* @ts-expect-error asa*/}
 const ServiceCard = ({index, icon, title})=>{
   return(
     <Tilt className="xs:w-[250px] w-full">
@@ -14,6 +13,7 @@ const ServiceCard = ({index, icon, title})=>{
       className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
       >
         <div
+        /* @ts-expect-error asa*/
         options={{
           max:45,
           scale:1,

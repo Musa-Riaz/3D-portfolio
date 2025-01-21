@@ -1,8 +1,6 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles/style";
 import { ComputersCanvas } from "./canvas";
-import { loop } from "three/tsl";
 
 const Hero = () => {
   return (

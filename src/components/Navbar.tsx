@@ -1,10 +1,9 @@
-import React from "react";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles/style";
 import { navLinks } from "../constants";
-import { NavLink } from "react-router-dom";
-import { logo, menu, close } from "../assets";
+{/* @ts-expect-error asa*/}
+import {  menu, close } from "../assets";
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);

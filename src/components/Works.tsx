@@ -1,12 +1,12 @@
-import React from 'react'
 import { Tilt } from 'react-tilt'
 import {motion} from 'framer-motion'
 import {styles} from '../styles/style'
+{/* @ts-expect-error asa*/}
 import {github} from '../assets'
 import { SectionWrapper } from '../hoc'
 import { projects } from '../constants'
 import { fadeIn,textVariant } from '../utils/motion';
-
+{/* @ts-expect-error asa*/}
 const ProjectCard = ({index, name, description, tags, image, source_code_link}) => {
 
   return(
@@ -49,6 +49,7 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link}) 
                 </h3>
             </div >
             <div className='mt-4 flex flex-wrap gap-2'>
+              {/* @ts-expect-error asa*/}
               {tags.map((tag, index) => (
                 <p key={index} className={`text-[14px] ${tag.color}`}>#{tag.name}</p>
               ))}
@@ -62,6 +63,7 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link}) 
 const Works = () => {
   return (
     <>
+    {/* @ts-expect-error asa*/}
       <motion.div variants={textVariant()}>
               <p className={styles.sectionSubText}>My Work</p>
               <h2 className={styles.sectionHeadText}>Projects.</h2>

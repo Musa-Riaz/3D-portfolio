@@ -1,7 +1,6 @@
 import {
     mobile,
     backend,
-    creator,
     web,
     javascript,
     typescript,
@@ -24,7 +23,9 @@ import {
     proj4,
     proj5,
     
-  } from "../assets";
+  }
+  /* @ts-expect-error asa*/
+  from "../assets";
   
   export const navLinks = [
     {

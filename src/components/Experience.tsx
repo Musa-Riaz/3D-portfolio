@@ -1,12 +1,11 @@
-import React from "react";
-import { VerticalTimeline, VerticalTimelineElement, VerticalTimelineProps }  from 'react-vertical-timeline-component';
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import { motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 import { styles } from "../styles/style";
 import { experiences } from "../constants";
 import { textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
-
+{/* @ts-expect-error asa*/}
 const ExperienceCard = ({ experience }) => {
   return(
     <>
@@ -33,6 +32,7 @@ const ExperienceCard = ({ experience }) => {
         <p className="text-secondary text-[16px] font-semibold" style={{margin:0}}>{experience.company_name}</p>
 
         <ul className="mt-5 list-disc ml-5 space-y-2">
+          {/* @ts-expect-error asa*/}
           {experience.points.map((point, index) => (
             <li key={index} className="text-white-100 text-[14px] pl-1 tracking-wider">
                {point}

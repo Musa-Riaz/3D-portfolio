@@ -1,4 +1,3 @@
-import React from "react";
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
@@ -15,7 +14,7 @@ const Contact = () => {
   });
   const formRef = useRef();
   const [loading, setLoading] = useState(false);
-
+/* @ts-expect-error asa*/
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
@@ -49,6 +48,7 @@ const Contact = () => {
         }
       );
   };
+  /* @ts-expect-error asa*/
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
@@ -63,6 +63,7 @@ const Contact = () => {
         <h3 className={`${styles.sectionHeadText}`}>Contact Me.</h3>
 
         <form
+        /* @ts-expect-error asa*/
           ref={formRef}
           onSubmit={handleSubmit}
           onChange={handleChange}

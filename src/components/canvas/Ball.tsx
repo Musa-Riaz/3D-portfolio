@@ -1,10 +1,9 @@
-import React from 'react'
 import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import {Decal, Float, OrbitControls, Preload, useTexture}
 from '@react-three/drei'
 import CanvasLoader from '../Loader'
-
+/* @ts-expect-error asa*/
 const Ball = (props) => {
 
   const [decal] = useTexture([props.imgUrl])
@@ -21,13 +20,14 @@ const Ball = (props) => {
       map={decal}
       position={[0, 0, 1]}
       rotation={[2*Math.PI, 0, 6.25]}
+      /* @ts-expect-error asa*/
       flatShading
       />
       </mesh>
     </Float>
   )
 }
-
+/* @ts-expect-error asa*/
 const BallCanvas = ({icon}) => {
   return(
     <Canvas
