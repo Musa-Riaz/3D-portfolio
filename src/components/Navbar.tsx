@@ -57,6 +57,7 @@ const Navbar = () => {
             <ul className="list-none flex justify-end items-star flex-col gap-4">
               {navLinks.map((link, index) => (
                 <Link
+                to={`${link.id}`}
                   key={index}
                   className={`${
                     active === link.title ? "text-white" : "text-secondary"
