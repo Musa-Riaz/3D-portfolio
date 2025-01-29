@@ -1,5 +1,6 @@
 import {  useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from 'react-scroll';
+
 import { styles } from "../styles/style";
 import { navLinks } from "../constants";
 {/* @ts-expect-error asa*/}
@@ -37,7 +38,7 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
-              <a href={`${link.id}`}>{link.title}</a>
+              <Link to={`${link.id}`}>{link.title}</Link>
             </li>
           ))}
         </ul>
@@ -55,7 +56,7 @@ const Navbar = () => {
           >
             <ul className="list-none flex justify-end items-star flex-col gap-4">
               {navLinks.map((link, index) => (
-                <li
+                <Link
                   key={index}
                   className={`${
                     active === link.title ? "text-white" : "text-secondary"
@@ -65,7 +66,7 @@ const Navbar = () => {
                   }}
                 >
                   <a >{link.title}</a>
-                </li>
+                </Link>
               ))}
             </ul>
           </div>
